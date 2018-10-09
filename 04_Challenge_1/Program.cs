@@ -33,8 +33,7 @@ namespace _04_Challenge_1
             };
 
             repo.AddCustomerToList(newCustomer);
-            if (newYears > 1) Console.WriteLine("You entered a legacy Customer");
-            else Console.WriteLine("New Customer Added");
+            Console.WriteLine(repo.GetMessage(newCustomer));
 
             Console.ReadKey();
         }
