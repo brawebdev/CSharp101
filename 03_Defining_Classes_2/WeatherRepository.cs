@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace _03_Defining_Classes_2
 {
-    class WeatherRepository
+    public class WeatherRepository
     {
+        private List<Weather> _weatherList;
+
+        public WeatherRepository()
+        {
+            _weatherList = new List<Weather>();
+        }
+
+        public void AddWeatherItemToList(Weather weather)
+        {
+            _weatherList.Add(weather);
+        }
+
+        public List<Weather> GetWeather()
+        {
+            return _weatherList;
+        }
     }
 }
