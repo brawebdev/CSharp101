@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _03_Defining_Classes_2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace _03_Defining_Classes_2_UI
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }
