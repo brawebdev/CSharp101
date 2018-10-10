@@ -7,7 +7,7 @@
     <ProjectGuid>{811C1CBB-78DE-4DBD-9E94-FBD3365DD0E0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_03_Defining_Classes_2_UI</RootNamespace>
-    <AssemblyName>_03_Defining_Classes_2_UI</AssemblyName>
+    <AssemblyName>03_Defining_Classes_2_UI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03_Defining_Classes_2\03_Defining_Classes_2.csproj">
+      <Project>{3CF95A62-9061-49E5-B18D-9E0138F03847}</Project>
+      <Name>03_Defining_Classes_2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

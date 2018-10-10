@@ -12,6 +12,7 @@ namespace _03_Defining_Classes_2
     }
     public class Weather
     {
+        public int WeatherID { get; set; }
         public DateTimeOffset WeatherDate { get; set; }
         public float Temperature { get; set; }
         public WindDirection WindDirection { get; set; }
