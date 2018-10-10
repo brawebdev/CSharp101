@@ -10,9 +10,11 @@ namespace _03_Defining_Classes_2_UI
         public void Run()
         {
             _weatherRepo = new WeatherRepository();
+            var weatherList = _weatherRepo.GetWeatherList();
 
             Console.WriteLine("Enter the Weather ID:");
-            var id = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+            var id = int.Parse(input);
 
             Console.WriteLine("Enter the current temp (°f):"); //-- alt + 0176
             var temp = float.Parse(Console.ReadLine());
@@ -28,7 +30,10 @@ namespace _03_Defining_Classes_2_UI
             bool isWet;
             Console.WriteLine("Is it precipitating? (y/n)");
             var isWetString = Console.ReadLine();
-            if (isWetString == "y") isWet = true;
+            if (isWetString == "y")
+            {
+                isWet = true;
+            }
             else isWet = false;
 
             var weather = new Weather

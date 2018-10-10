@@ -20,7 +20,7 @@ namespace _03_Defining_Classes_2
             _weatherList.Add(weather);
         }
 
-        public List<Weather> GetWeather()
+        public List<Weather> GetWeatherList()
         {
             return _weatherList;
         }
