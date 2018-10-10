@@ -15,7 +15,6 @@ namespace _03_Defining_Classes_3_Unit_Tests
         private SalesTeamMember _member4;
         private SalesTeamMember _member5;
 
-
         [TestInitialize]
         public void Arrange()
         {
