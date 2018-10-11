@@ -55,5 +55,16 @@ namespace _04_Queue_Challenge_Unit_Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void ClientRepository_PeekNullClient_ReturnCorrectClient()
+        {
+            _clientRepo = new ClientRepository();
+
+            Client expected = null;
+            var actual = _clientRepo.PeekNextClient();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

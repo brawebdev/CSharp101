@@ -33,6 +33,9 @@ namespace _04_Queue_Challenge
 
         public Client PeekNextClient()
         {
+            if (_clientQueue.Count == 0)
+                return null;
+
             return _clientQueue.Peek();
         }
     }
