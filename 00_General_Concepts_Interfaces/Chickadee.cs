@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace _00_General_Concepts
 {
-    class Chickadee : IBird, ICrudRepository
+                                              //T    //TT
+    class Chickadee : IBird, ICrudRepository<string, Bird>
     {
-        private List<string> birdList;
+                            //vvv-- Notice that T is type string here
+        public bool Create(string foo)
+        {
+            throw new NotImplementedException();
+        }
 
-
-        public bool Create()
+        public Bird GetAll()
         {
             throw new NotImplementedException();
         }
@@ -27,11 +31,6 @@ namespace _00_General_Concepts
         }
 
         public void FlapWings()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void GetAll()
         {
             throw new NotImplementedException();
         }

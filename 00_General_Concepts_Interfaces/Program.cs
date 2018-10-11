@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace _00_General_Concepts
 {
-    interface ICrudRepository
+    class Program
     {
-        bool Create();
-        void Read();
-        bool Update();
-        bool Delete();
-        void GetAll();
+        static void Main(string[] args)
+        {
+       
+        }
     }
 }

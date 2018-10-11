@@ -48,13 +48,16 @@ namespace _03_Defining_Classes_3
         {
             var lowestNum = GetLowestSalesNumber();
 
-            //var members = _salesTeamMemberList.FindAll(x => x.MonthlySales == lowestNum);
-            List<SalesTeamMember> members = new List<SalesTeamMember>();
-            foreach(SalesTeamMember s in _salesTeamMemberList)
-            {
-                if (s.MonthlySales == lowestNum)
-                    members.Add(s);
-            }
+            var members = _salesTeamMemberList.FindAll(x => x.MonthlySales == lowestNum);
+
+            //-- More verbose
+            //var members = new List<SalesTeamMember>();
+
+            //foreach(SalesTeamMember s in _salesTeamMemberList)
+            //{
+            //    if (s.MonthlySales == lowestNum)
+            //        members.Add(s);
+            //}
 
             return members;
         }
