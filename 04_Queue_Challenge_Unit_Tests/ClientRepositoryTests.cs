@@ -26,7 +26,7 @@ namespace _04_Queue_Challenge_Unit_Tests
         [TestMethod]
         public void ClientRepository_AddClientToQueue_ReturnCorrectCount()
         {
-            _clientRepo.AddClientToQueue(new Client("Lawrence Wagner", "Fix it pease"));
+            _clientRepo.AddClientToQueue(new Client("Lawrence Wagner", "Fix it please"));
 
             var expected = 3;
             var actual = _clientRepo.GetClientQueue().Count;
