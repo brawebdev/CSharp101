@@ -27,8 +27,7 @@ namespace _04_Queue_Challenge
 
         public Client ProcessClaim()
         {
-            var client = _clientQueue.ElementAt(0);
-            _clientQueue.Dequeue();
+            var client = _clientQueue.Dequeue();
             return client;
         }
 
