@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace _00_General_Concepts
 {
-    class Bird
+    //-- Interface Demo - Random topic from class
+    interface IBird
     {
+        void MakeSound();
+        void Move();
+        void FlapWings();
+        void Eat();
     }
 }

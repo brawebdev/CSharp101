@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F91B0EEC-0CD5-48D7-911A-00EF456BBAB5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_00_General_Concepts</RootNamespace>
-    <AssemblyName>_00_General_Concepts</AssemblyName>
+    <RootNamespace>_00_General_Concepts_Interfaces</RootNamespace>
+    <AssemblyName>00_General_Concepts_Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarnOwl.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="Chickadee.cs" />
+    <Compile Include="IBird.cs" />
+    <Compile Include="ICrudRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

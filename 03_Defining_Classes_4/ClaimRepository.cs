@@ -24,7 +24,6 @@ namespace _03_Defining_Classes_4
             return message;
         }
 
-        //-- Passed
         public string ValidateTimeSpan(Claim claim)
         {
             string message = "valid";

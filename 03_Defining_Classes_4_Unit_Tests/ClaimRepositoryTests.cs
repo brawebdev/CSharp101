@@ -61,7 +61,7 @@ namespace _03_Defining_Classes_4_Unit_Tests
 
             //-- Assert
             Assert.AreEqual(expected, actual);
-            Assert.IsInstanceOfType(actual, typeof(string));
+            Assert.IsInstanceOfType(actual, typeof(string)); //-- Another way to test things
         }
     }
 }
