@@ -9,6 +9,7 @@ namespace Design_Pattern_Command_2.Commands
     public interface ICommand
     {
         void Execute(decimal money);
+        void Execute(int transactionNumber);
         decimal Execute();
     }
 }

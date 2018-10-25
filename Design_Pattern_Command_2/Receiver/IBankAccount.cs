@@ -10,6 +10,7 @@ namespace Design_Pattern_Command_2.Receiver
     {
         void Add(decimal money);
         void Subtract(decimal money);
+        void Revert(int transactionNumber);
         decimal Get();
     }
 }

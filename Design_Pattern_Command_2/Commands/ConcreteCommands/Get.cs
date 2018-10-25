@@ -21,6 +21,10 @@ namespace Design_Pattern_Command_2.Commands.ConcreteCommands
            return _bankAccount.Get();
         }
 
+        public void Execute(int transactionNumber)
+        {
+        }
+
         public void Execute(decimal money)
         {
         }

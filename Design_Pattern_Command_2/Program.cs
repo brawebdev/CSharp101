@@ -22,22 +22,26 @@ namespace Design_Pattern_Command_2
             ICommand addToChecking = new Add(checkingAccount);
             ICommand subtractFromChecking = new Subtract(checkingAccount);
             ICommand getBalanceOfChecking = new Get(checkingAccount);
+            ICommand revertChecking = new Revert(checkingAccount);
 
             ICommand addToSavings = new Add(savingsAccount);
             ICommand subtractFromSavings = new Subtract(savingsAccount);
             ICommand getBalanceOfSavings = new Get(savingsAccount);
+            ICommand revertSavings = new Revert(savingsAccount);
 
             //Invoker
-            BankAccountInvoker checkingInvoker = new BankAccountInvoker(addToChecking, subtractFromChecking, getBalanceOfChecking);
-            BankAccountInvoker savingsInvoker = new BankAccountInvoker(addToSavings, subtractFromSavings, getBalanceOfSavings);
+            BankAccountInvoker checkingInvoker = new BankAccountInvoker(addToChecking, subtractFromChecking, getBalanceOfChecking, revertChecking);
+            BankAccountInvoker savingsInvoker = new BankAccountInvoker(addToSavings, subtractFromSavings, getBalanceOfSavings, revertSavings);
 
             checkingInvoker.Add(10);
             checkingInvoker.Subtract(5);
+            checkingInvoker.Revert(1);
             var checkingBalance = checkingInvoker.Get();
             Console.WriteLine(checkingBalance);
 
             savingsInvoker.Add(8);
             savingsInvoker.Subtract(5);
+            savingsInvoker.Revert(1);
             var savingsBalance = savingsInvoker.Get();
             Console.WriteLine(savingsBalance);
 

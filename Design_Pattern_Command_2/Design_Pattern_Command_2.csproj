@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Commands\ConcreteCommands\Add.cs" />
     <Compile Include="Commands\ConcreteCommands\Get.cs" />
+    <Compile Include="Commands\ConcreteCommands\Revert.cs" />
     <Compile Include="Commands\ConcreteCommands\Subtract.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Invoker\BankAccountInvoker.cs" />

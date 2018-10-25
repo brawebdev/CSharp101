@@ -7,27 +7,29 @@ using System.Threading.Tasks;
 
 namespace Design_Pattern_Command_2.Commands.ConcreteCommands
 {
-    class Subtract : ICommand
+    class Revert : ICommand
     {
         private IBankAccount _bankAccount;
 
-        public Subtract(IBankAccount bankAccount)
+        public Revert(IBankAccount bankAccount)
         {
             _bankAccount = bankAccount;
         }
 
-        public void Execute(decimal money)
-        {
-            _bankAccount.Subtract(money);
-        }
-
-        public void Execute(int transactionNumber)
-        {
-        }
 
         public decimal Execute()
         {
             return 0;
+        }
+
+        public void Execute(decimal transactionNumber)
+        {
+            
+        }
+
+        public void Execute(int transactionNumber)
+        {
+            _bankAccount.Revert(transactionNumber);
         }
     }
 }

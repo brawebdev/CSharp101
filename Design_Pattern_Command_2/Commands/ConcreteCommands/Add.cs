@@ -20,6 +20,10 @@ namespace Design_Pattern_Command_2.Commands.ConcreteCommands
             _bankAccount.Add(money);
         }
 
+        public void Execute(int transactionNumber)
+        {
+        }
+
         public decimal Execute()
         {
             return 0;
