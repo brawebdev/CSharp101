@@ -15,6 +15,9 @@ namespace Design_Pattern_Command_2
         static void Main(string[] args)
         {
             //Receiver
+            //Example of Liskov Substitution Principle:
+                //If S (CheckingAccount, SavingsAccount) is a subtype of T (IBankAccount),
+                //then objects of type T (IBankAccount) may be replaced with object of type S (CheckingAccount, SavingsAccount).
             IBankAccount checkingAccount = new CheckingAccount();
             IBankAccount savingsAccount = new SavingsAccount();
 
